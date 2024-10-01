@@ -6,15 +6,15 @@
   
   <title>读书笔记 | DYX&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Q-关注的问题 knn-ctc-多语言，分离，dalle3 mamba，SSM，svm，ROC 数学中垂线:等长(连接后全等)和中垂线(勾股求第三边)互推，交于外接圆圆心(两中垂导致三边等+两边等) 勾股定理：【圆上直角，长边垂线，正方形面积的两种表示】 圆周角定理：是圆心角一半【两等腰，360减两角】 正弦定理：边&#x2F;sin角&#x3D;直径【外接圆 三等腰 垂线 圆周角 边除sin相加】 余弦定理：第三边">
+  <meta name="description" content="Q-关注的问题 dalle3 mamba，SSM，svm，ROC 数学中垂线:等长(连接后全等)和中垂线(勾股求第三边)互推，交于外接圆圆心(两中垂导致三边等+两边等) 勾股定理：【圆上直角，长边垂线，正方形面积的两种表示】 圆周角定理：是圆心角一半【两等腰，360减两角】 正弦定理：边&#x2F;sin角&#x3D;直径【外接圆 三等腰 垂线 圆周角 边除sin相加】 余弦定理：第三边平方还要+2两边cos夹角【b">
 <meta property="og:type" content="article">
 <meta property="og:title" content="读书笔记">
 <meta property="og:url" content="http://example.com/2024/06/24/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="DYX&#39;s Blog">
-<meta property="og:description" content="Q-关注的问题 knn-ctc-多语言，分离，dalle3 mamba，SSM，svm，ROC 数学中垂线:等长(连接后全等)和中垂线(勾股求第三边)互推，交于外接圆圆心(两中垂导致三边等+两边等) 勾股定理：【圆上直角，长边垂线，正方形面积的两种表示】 圆周角定理：是圆心角一半【两等腰，360减两角】 正弦定理：边&#x2F;sin角&#x3D;直径【外接圆 三等腰 垂线 圆周角 边除sin相加】 余弦定理：第三边">
+<meta property="og:description" content="Q-关注的问题 dalle3 mamba，SSM，svm，ROC 数学中垂线:等长(连接后全等)和中垂线(勾股求第三边)互推，交于外接圆圆心(两中垂导致三边等+两边等) 勾股定理：【圆上直角，长边垂线，正方形面积的两种表示】 圆周角定理：是圆心角一半【两等腰，360减两角】 正弦定理：边&#x2F;sin角&#x3D;直径【外接圆 三等腰 垂线 圆周角 边除sin相加】 余弦定理：第三边平方还要+2两边cos夹角【b">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-06-24T13:52:40.000Z">
-<meta property="article:modified_time" content="2024-08-11T14:58:39.912Z">
+<meta property="article:modified_time" content="2024-10-01T08:05:58.373Z">
 <meta property="article:author" content="dyx">
 <meta property="article:tag" content="面经">
 <meta name="twitter:card" content="summary">
@@ -207,7 +207,7 @@ mjx-container[display="true"] + br {
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><strong>Q-关注的问题</strong></p>
-<p>knn-ctc-多语言，分离，dalle3</p>
+<p>dalle3</p>
 <p>mamba，SSM，svm，ROC</p>
 <h4 id="数学"><a href="#数学" class="headerlink" title="数学"></a>数学</h4><p><strong>中垂线</strong>:等长(连接后全等)和中垂线(勾股求第三边)互推，交于外接圆圆心(两中垂导致三边等+两边等)</p>
 <p><strong>勾股定理</strong>：【圆上直角，长边垂线，正方形面积的两种表示】</p>
@@ -247,20 +247,21 @@ mjx-container[display="true"] + br {
 <h4 id="计算机基础"><a href="#计算机基础" class="headerlink" title="计算机基础"></a>计算机基础</h4><p><strong>PATH和环境</strong>:路径/conda可执行conda程序，path添加路径后只要conda，打开命令行自动执行bashrc[可添加path]，创建虚拟环境创建文件夹[共享一些库]+可执行文件，激活后添加到path</p>
 <p><strong>SSH验证</strong>:生成私钥，公钥放到GitHub，我提交push[配了用户名和邮箱]，GitHub查用户关联公钥，加密一段话，我用私钥解密，冒充他人时没有密钥</p>
 <p><strong>HTTPS验证</strong>：对称加密[共同密钥加密解密],但这个密钥要先用非对称加密分享[公钥加密，私钥解密]</p>
-<p><strong>进程线程</strong>：任务管理器里就是进程，一个程序一个或多个进程，有独立页表(独占内存)，至少含一个线程(共享进程的内存和页表，但不同栈空间)</p>
+<p><strong>进程线程</strong>：任务管理器里就是进程，一个程序有一个或多个进程，(独占内存)有独立页表，至少含一个线程(共享进程的内存和页表，但不同栈空间)</p>
 <p><strong>用户线程</strong>：由线程库创建，可并行(函数调用在同一线程)，内核只看到进程看不到用户线程，一个阻塞全部阻塞(sleep系统调用让整个进程sleep)</p>
 <p><strong>孤儿进程</strong>:父进程死了，子进程交给爷爷管(初始进程接管)</p>
 <p><strong>僵尸进程</strong>:子进程死了(调用exit，资源已释放)，但是没有收尸(pcb还在，父进程收到信号后调用wait清理pcb)</p>
 <p><strong>页表</strong>:x86三级(10+10+12), x64四级(9+9+9+9+12),riscV三级(9+9+9+12)。页表和页大小都是4k，x86页表项大小4B(内存地址只有4G)，x64和riscV页表项大小8B</p>
 <p><strong>cr3</strong>:cr3存了根页表物理地址，用10bit作为index查4*1024数组，得二级页表地址，再查得物理页表地址，+偏移=物理地址</p>
-<h4 id="语言基础"><a href="#语言基础" class="headerlink" title="语言基础"></a>语言基础</h4><p><strong>声明</strong>:可以跟(花)括号,或=花(括号)，里面填构造参数(多用逗号，可无)，用=则括号前加类型[否则变逗号表达式]，单参数花括号可省</p>
+<h4 id="语言基础"><a href="#语言基础" class="headerlink" title="语言基础"></a>语言基础</h4><p><strong>声明</strong>:可以跟(花)括号,或=花(括号)，里面填构造参数(逗号隔开，可无)，用=则括号前加类型[否则变逗号表达式]，单参数花括号可省</p>
 <p><strong>赋值</strong>:声明语句含=的格式都可以，=花括号可以只写前面参数，后面默认</p>
 <p><strong>逗号表达式</strong>：顺着执行，返回最右，右边不能有标识符</p>
 <p><strong>if</strong>:if分支中最后return continue break;则后面的else 可以去掉[都是2选1结构].if必满足可舍去if()[if里只有判断],不满足可整条舍去</p>
 <p><strong>else if</strong>:两分支可能都执行，用if if,只能执行一个用else if(有时可以if但不好)[else if的意义:多选一]</p>
 <p><strong>等价结构</strong>:else if=else{if}<strong>短路机制</strong>与if(a&amp;&amp;b)=if(a){if(b)}，或同理,真值确定后面不执行</p>
 <p><strong>for等价</strong>：初始化外提等价但延长生命周期,尾操作放末尾continue,break前等价，只有条件的for和while等价</p>
-<p><strong>for本质</strong>:是枚举,在{}开头隐式枚举了:[初始对象,最后一个满足条件的对象] (初始不满足则for变空气) ,结尾枚举了[次始对象,第一个不满足条件的对象(决定全局变量)],尾操作-迭代下一个对象</p>
+<p><strong>for和while</strong>:{}内部遍历了从初始元素开始，所有满足条件的元素 (都不满足则不遍历) ，元素迭代放在尾部</p>
+<p><strong>do while</strong>:等价于while(1){最后if()break}</p>
 <p><strong>隐式枚举</strong>:枚举i实际在枚举(i,a[i]),枚举次数({}里面不含i)实际在枚举(i,状态),枚举操作实际在枚举棋盘.</p>
 <p><strong>for整体理解</strong>:for ij=两两枚举，循环+for=确定枚举,for if=条件枚举[=for+continue]</p>
 <p><strong>二重for</strong>:i顺j顺，i顺j逆填矩形,j=[l,i]左上角(保序去重)，j=[i,r]右上角,j!=i去主对角</p>
@@ -274,19 +275,22 @@ mjx-container[display="true"] + br {
 <p><strong>引用</strong>:写给编译器看,int &amp;a=b让编译器把a当作b翻译寻址,但本身不翻译成汇编指令(故a不占内存,机器不知道有没有引用)</p>
 <p><strong>数组</strong>：普通、结构体、类数组，内存上是连续的，总空间=(成员长度+补齐)*数组长</p>
 <p><strong>this,p,arr</strong>:都是首元素的地址，都不占用额外空间.p.a,this-&gt;a和arr[2]都是加上偏移量找出元素地址.</p>
-<p><strong>私有性</strong>:编译器判断合法性，通过后不额外生成汇编，也不会存储是否私有，可以用地址直接访问.</p>
+<p><strong>私有性</strong>:编译器判断合法性，通过后不额外生成汇编，也不会存储是否私有，可以用地址直接访问</p>
+<p><strong>常量(成员)函数</strong>:括号后加const，修改成员会导致报错。常量参数，函数内不能修改。自定义排序通产用二者</p>
+<p><strong>自定义排序</strong>: 元素定义时重载小于号(返回bool，自己和别人比是否更小)，或重载括号(元素a是否比元素b小)</p>
 <p><strong>包含保护</strong>:ifndef{define _H，内容},第一次include插入，第二次不插入，同一文件内避免重复包含头文件</p>
 <p><strong>编译四阶段</strong>:预处理(替换include和define，去注释[C++])，编译(.cpp生成.asm，assic存储)，汇编(.asm到.obj,二进制存指令)，链接(指明函数定义位置)</p>
 <p><strong>编译阶段</strong>：函数有声明无定义不会报错，声明三种形式:头文件替换，自己声明，extern。</p>
 <p><strong>编译阶段的6步骤</strong>：文法分析(词元化，去注释[python])，语法分析(语法树)，语义分析(检查错误)，中间代码生成(三地址码)，[中间]代码优化(直接算常量，去掉无用代码)，机器代码生成(汇编码)</p>
 <p><strong>SIMD</strong>：(single inst mul data)一条代码加载连续4float/int，相加，存数组.循环汇编是跳转结构，使用标量寄存器(eax)，SIMD汇编是单指令，使用向量寄存器</p>
-<p><strong>pthread</strong>:线程并行。(posix)create创建线程，join等待线程结束，用open-mp(multi processing)无需显式创建线程(线程数由系统定) </p>
+<p><strong>pthread</strong>: (posix)多线程库。create创建线程，join等待线程结束，用open-mp(multi processing)无需显式创建线程(线程数由系统定) </p>
 <p><strong>MPI</strong>:(message passing interface)进程并行。</p>
-<p><strong>迭代器</strong>：模板类，嵌套在对应的模板类内，重载了指针的*等符号，从添加两个r可反向遍历</p>
+<p><strong>迭代器</strong>：模板类，嵌套在对应的模板类内，重载了指针的*等符号，添加两个r可反向遍历</p>
 <p><strong>emplace_back</strong>：push_back创建一个拷贝一个，emplace_back末尾直接创建一个</p>
 <p><strong>关联容器</strong>:节点是key还是pair(key,val)决定了map和set，红黑树还是哈希表(链地址法)家族[库不同]决定unoredered_，key重复是否新开节点决定mulset/map</p>
 <p><strong>关联容器.count</strong>:返回key对应的节点数量，解决访问即创建(默认值)的问题，速度不影响</p>
 <p><strong>关联容器.find</strong>: 返回key对应节点的迭代器，没找到返回.end()。</p>
+<p><strong>顺序容器</strong>:连续存储(静态array，动态vector，类似的deque)，不连续(list,forwar_list单向链表)。排序等方法要借助algorithm</p>
 <p><strong>python相同</strong>:0下标，半开区间</p>
 <h4 id="传统算法"><a href="#传统算法" class="headerlink" title="传统算法"></a>传统算法</h4><p><strong>冒泡排序</strong>:枚举l到r个位置定剩余最小，从r成对推到当前位置，小的往左换,最小值一路推到左边[边界自洽]</p>
 <p><strong>辗转相除法</strong>:gcd=gcd(除数，余数)【证cd相同，整除ab的整除a%b,整除b,a%b的整除a】，边界是gcd(a,a)=gcd(a,0)=abs(a)返回</p>
@@ -295,26 +299,33 @@ mjx-container[display="true"] + br {
 <p><strong>min-hash</strong>:集合哈希=元素哈希最小值</p>
 <p><strong>局部敏感哈希</strong>:LSH(local sensitive hashing)，集合多种哈希构成哈希坐标，最邻近的点【欧式，余弦，一致率】最相似</p>
 <p><strong>elo评分</strong>：初始同分，得分期望=指数函数(分差)，段位分+=32(实际得分-期望)</p>
-<h4 id="acwing"><a href="#acwing" class="headerlink" title="acwing"></a>acwing</h4><p><strong>错误词典</strong>：忘记输入，没有初始化，ijk错误，返回值，状态一致性错(树状数组)</p>
+<h4 id="acwing"><a href="#acwing" class="headerlink" title="acwing"></a>acwing</h4><p><strong>错误词典</strong>：输入错误(忘记输入，&gt;&gt;写成逗号)，初始化错误(忘记初始化，被作用域覆盖，多样例没有清空)，变量错误(ijk,uvw,nm)，状态一致性错误</p>
 <p><strong>时间限制</strong>：10的8次方次操作</p>
 <p><strong>边界策略</strong>：想不清边界处理方法时，操作/函数前面加上代码不出错的条件或处理方法，代码大概率自发正确</p>
 <p><strong>一致性操作</strong>:多个操作是同一个操作的不同表现，要保持状态一致性，同行同段来保证</p>
 <p><strong>附加操作</strong>:利用已有算法的中间状态，附加上一个操作，达到一个额外效果</p>
 <p><strong>独立最值</strong>：xyz独立，则xyz和的最值是xyz最值的和</p>
-<p><strong>快读</strong>：scanf快，和ios::sync_with_stio(0),cin.tie(0)关同步差不多，之后不能混用ios和stdio</p>
-<p><strong>多样例</strong>：总是读完数据，公共全局变量重置，局部变量不用</p>
+<p><strong>快读</strong>：scanf快(注意引用)，和ios::sync_with_stio(0),cin.tie(0)关同步差不多，之后不能混用ios和stdio</p>
+<p><strong>读数技巧</strong>:读取到输入结尾while(cin&gt;&gt;n&gt;&gt;m),读取到0之前,while(cin&gt;&gt;n,n)</p>
+<p><strong>多组样例</strong>：读完数据才能continue，重置全局变量</p>
 <p><strong>卡常</strong>：unordered_map快，引用省内存，vector原地操作</p>
 <p><strong>爆int</strong>：#define int long long+signed main，溢出前转换ll(a+b)%ll p错,lla+b或a+llb对，或替换int声明</p>
 <p><strong>命名冲突</strong>:库函数命名大都下划线，但有的冲突，如:size</p>
 <p><strong>位运算</strong>：l+r&gt;&gt;1除2，i&lt;&lt;1乘2，i&lt;&lt;1|1乘2加1，1&lt;&lt;i 1后面i个0，i|=1&lt;&lt;j i第j位变1,i&amp;1 奇偶数，~i全取反(含符号)</p>
 <p><strong>植树原理</strong>:闭区间(算法都用)[l,r]当中含r-l+1个元素，矩阵的线(格点)比格子多一</p>
+<p><strong>多对一</strong>:数组从多的编号映射到1的编号，vector数组从1的编号映射到多的编号</p>
+<p><strong>次小算法</strong>:比较当前值和最小值、次小值大小，排成一列，移动后让次小值=第二个，最小值=第一个[先动最小值可能导致次小值来不及赋值]</p>
+<p><strong>严格次小值算法</strong>:最小值必须严格小于次小值。区别在于当前值==最小值时，不要移动，移动会导致次小值和最小值相同(不严格次小值 )</p>
 <p><strong>单调栈</strong>:求左边第一个更小元素(元素个数求不了),四种模板,维护四种梯形,点在斜面(左遍历,左梯形,左更小,无用丢弃)</p>
-<p><strong>二分本质</strong>:答案在区间，区间二可分,求值变判定.两种模板，两种悬崖</p>
-<p><strong>二分要素getans</strong>：分段条件(inr表示mid在右段)，ans位置(左段右端点,右段左端点)，ans范围(lr闭区间).</p>
-<p><strong>推导代码</strong>：mid与ans同段少移,异段多移.mid加减相消.最终l=r,是最接近答案的解</p>
-<p><strong>无序离散化</strong>：(图节点重编号)，map映射，新节点顺序编号，旧节点返回编号</p>
+<p>**二分验证 **:答案在区间(移动),区间可二分(假设ans为某值，当mid&lt;=&gt;ans时推出命题及否命题，可由命题成立性反推mid位置)</p>
+<p><strong>二分要素</strong>：ans范围(lr闭区间)，分段条件(inr表示mid在右段)，ans位置(左段右端点,右段左端点)，.</p>
+<p><strong>离散二分</strong>：ans靠右(右段)导致mid靠左(没有+1)。mid与ans同段少移,异段多移.最终l=r,是最接近答案的解</p>
+<p><strong>连续二分</strong>：答案是小数，边界直接移动到mid即可。但注意double, 和0比较时精度比保留的小数多一位</p>
+<p><strong>编号算法</strong>：当前编号总数作为编号。如果没有编号过(用map维护)，总数增加，否则跳过</p>
 <p><strong>快速幂</strong>:枚举对象,起点=(a,b),(a^2,b&gt;&gt;1)…(a^?,1)[状态一致性],b最后一位决定是否乘a</p>
 <p><strong>快速幂大整数乘法</strong>:枚举对象,起点=(a,b),(a*2,b&gt;&gt;1)…(a *?,1)[状态一致性],b最后一位决定是否加a</p>
+<p><strong>矩阵快速幂</strong>:矩阵看成a，初始矩阵自定义。多维数组指针需要指定后面维度，乘积暂存后拷贝防止修改乘数，memcpy把值换数组，指针的size是4，数组名的size是数组大小</p>
+<p><strong>数学快速幂</strong>: 矩阵A乘特征向量列矩阵X=X乘特征值对角阵Λ，再乘X的逆得A，A^n展开，中间约掉，对角阵的幂变数字的幂</p>
 <p><strong>桶排序</strong>：桶数组buc i表示数字i出现的次数，统计次数++，输出buk i个i</p>
 <p><strong>前缀和</strong> :psum i表示arr1加到arri.当前和=前面和+当前数,从1开始数,区间和=右区间-左区间左移[无修改区间查询]</p>
 <p><strong>二维前缀和</strong>:psum ij表示arr11加到arr ij.当前和=行-1+列-1减去重叠+当前,区间和=当前和-行上移减1-列左移减1+都有</p>
@@ -339,11 +350,12 @@ mjx-container[display="true"] + br {
 <p><strong>额外信息</strong>:求最值下标等，定义额外信息变量，更新时注意更新额外信息</p>
 <p><strong>多优先级最值</strong>：求对象最值，枚举对象，第一优先级属性胜出则更新，相等则比较第二优先级，否则跳过</p>
 <p><strong>多答案最值</strong>：多个最值，取第一个:最后一级优先级相等的时候，不发生更新。如果发生更新是取最后</p>
-<p><strong>结合真值算法</strong>：真值=若干元素的或(真值变量||=元素，初始化:0)，与(真值变量&amp;&amp;=元素,初始化1)，优化：真值确定时不再枚举</p>
+<p><strong>最值方案数</strong>：最值更新时重置方案数，最值相同时累加方案数</p>
+<p><strong>真值算法</strong>：真值=若干元素的或(真值变量||=元素，初始化:0)，与(真值变量&amp;&amp;=元素,初始化1)，优化：真值确定时不再枚举</p>
 <p><strong>二叉树数组</strong>：二叉树顺着标号放进数组，只能从1(根)开始数，节点i的左孩子是2<em>i，右孩子是2</em>i+1</p>
 <p><strong>down u</strong>：求出节点u和两个孩子的最小值下标(首元素+if写法+边界策略)，如果是孩子，把孩子换上来并递归</p>
 <p><strong>堆排序</strong>：二叉树数组tr[i]表示节点i的大小，从下向上down，输出根后换到最后一个节点并去掉，换上来的节点down下去</p>
-<p><strong>顺序遍历</strong>：形如dfs{边界策略，dfs(左),dfs(右)}的结构，操作(输出)的三种位置构成先、中、后序遍历</p>
+<p><strong>顺序遍历</strong>：形如dfs{dfs(左),dfs(右)}的结构，操作(输出)的三种位置构成先、中、后序遍历</p>
 <p><strong>遍历式排序</strong>：问题限制在lr闭区间上排序，边界策略：单点,快排防l&gt;r,但归排不用，操作：整理，分段策略：mid分段或区间错开</p>
 <p><strong>mid分段法</strong>：mid靠左则mid][mid+1，mid靠右则mid-1][mid，偶数均分(mid在中间两侧)，奇数mid居中 mid]导致左边多一数.优点：边界是l==r无需判断l&gt;r</p>
 <p><strong>归并排序</strong>：后序遍历，整理：从左枚举两段元素，取较小者(一致性，边界策略),排好放回原位</p>
@@ -353,6 +365,7 @@ mjx-container[display="true"] + br {
 <p><strong>快排性质</strong>：左区间小于等于枢值，小于等于右区间，左区间是前l大<del>j大,右区间是前i大</del>到r大</p>
 <p><strong>快速选择</strong>：排序后的<code>arr[k]</code>(第k大).k在左区间则答案在左区间，2选1遍历，最后固定arr[k]</p>
 <p><strong>复杂度</strong>：快排是(类)线段树的先遍历，logn 层n，快速选择是剪枝(节点是条形的)n+1/2n…=n</p>
+<p><strong>大量数据排序</strong>：值范围很小时，用桶排序。否则，mapreduce，分块用map进行桶排序，聚合，map键有序，快排远距离交换开销大。</p>
 <p><strong>线段树</strong>：二叉树数组tr[i]表示节点i管理的闭区间范围和区间属性，左右孩子管理的区间由mid法分段得到，根节点管理整个区间[可视化是砖墙]</p>
 <p><strong>独立隐式</strong>:节点管理的区间不与原数组共享，而是独立的，区间属性独立计算，区间的存储、修改、重算隐式实现，只有根区间总是和原数组一致</p>
 <p><strong>pushup</strong>:(本质是区间向上覆盖)由左右区间属性重算区间属性(不包含区间范围和懒标记)，简化版是重算节点属性</p>
@@ -368,31 +381,45 @@ mjx-container[display="true"] + br {
 <p><strong>区间modify</strong>:后序遍历.已知修改区间和节点管理的区间相交,修改相交区间最小覆盖节点,路径节点重算.边界策略=全覆盖(节点修改).</p>
 <p><strong>维护原数组</strong>:树状数组add时原数组也加，线段树区间modify时原数组也修改.</p>
 <p><strong>区间乘加</strong>:懒标记表示子区间还要乘加，多次待做的乘加累计成一次乘加.</p>
-<p><strong>dijkstra</strong>:待小定松，disi表示源点到i最短路</p>
-<p><strong>优先队列法</strong>:入队判重的dis方法+确定节点det跳过</p>
+<p><strong>标准初始化</strong>：单源最短路，dis表示从起点的最短路，多源表示i到j的最短路。全部无穷，起点是0(多源有n个起点)</p>
+<p><strong>邻接表</strong>:vector数组，g[u]表示节点u所有出边的信息[v,w,eid]。反图gr[v]表示指向节点v所有入边的信息。广搜类(堆优化dijstra，亲戚spfa)通用</p>
+<p><strong>邻接矩阵</strong>:floyd，普通dijstra（其他存图方式：矩阵存地图，bellman用vector存边[端点和权重]）</p>
+<p><strong>bfs</strong>:没有边权时，bfs遍历顺序同边权为1的dijstra</p>
+<p><strong>bfs可视化</strong>：元素划掉-连线[条件枚举]-下一行对象，无划线对象构成队列。可逐行去元素,附加操作求层数和层和.</p>
+<p><strong>最小步数模型</strong>:对象里存路径(长度)，路径=旧路径+新边.终止时机：入队[第一次也要判定，路径比当前多1]，出队[慢]</p>
+<p><strong>判重方法</strong>:前判后防，只遍历dis更大的邻居[圈内两点更新同一节点会导致重复入队]，只遍历没有走过的邻居[队无重员]</p>
+<p><strong>停止条件</strong>:入队停止(找到答案就停止),出队停止(多等一会停止),遍历完停止</p>
+<p><strong>拓扑排序</strong>：按照拓扑序[遍历到的节点入度总为0]遍历的bfs，起点全部入队，出队后砍掉临边，遍历入度为0的邻居入队</p>
+<p><strong>树形广搜(有向)</strong>:起点入队，出队时遍历邻居入队</p>
+<p><strong>广搜flood fill</strong>:树形广搜，但st标记起点，st判重。可视化：遍历节点，没有染色时整个联通块染色</p>
+<p><strong>广搜走迷宫</strong>:树形广搜，但dis标准初始化，dis判重。 可视化：格子是节点，邻边权为1(可推广到任意)，自己菱形绕圈[方向优先级决定如何画圈]</p>
+<p><strong>一视同仁原则</strong>:广搜需要对起点做和邻居一样的操作，例如dis=0和q.push</p>
+<p><strong>多源广搜</strong>:多个起点最短路的最小值，等价于超级源点指向起点(边权为0)的单源最短路，等价于起点全部入队dis=0[想象具体路径证明]</p>
+<p><strong>双端队列广搜</strong>:广搜走迷宫，权为0或1的图。deque代替(优先)队列，0边指向的邻居从前入队，1边从后，总是从前出队[出队元素dis单调增，先把dis=0的点遍历完]</p>
+<p><strong>dijkstra</strong>:广搜走迷宫优化：圈(优先队列)中dis最小的先出队，出队时dis过时丢弃[等价于st判重]</p>
+<p><strong>条件</strong>：负环导致广搜走迷宫死循环(无限更新)，负边导致广搜走迷宫出队节点的dis还能被更新</p>
 <p><strong>dijstra性质</strong>:分成两个集合,确定最短路的节点,dis是最短路;待定最短路的节点,dis是只可以经过确定最短路节点到达的最短路[未遍历到如同不存在]</p>
 <p><strong>dijstra证明</strong>:k=1左集合只有源点,右集合最小dis就是最短路,其他路更长.k=n,最小dis是最短路,无论是否经过其他待定节点,都是是更长.[非负边才满足,有向与否不影响]</p>
 <p><strong>时间复杂度</strong>：普通V^2(V点dis最小，总共定V点)，优先队列ElogV(V点dis最小，队有重员，不止V次)</p>
-<p><strong>bfs</strong>:边权为1的dijkstra，有向无环可不判重，如拓扑排序.队列天然单调相当于优先队列</p>
-<p><strong>bfs可视化</strong>：元素划掉-连线[条件枚举]-下一行对象，无划线对象构成队列。可逐行去元素,附加操作求层数和层和.[单调性变待小定松]</p>
-<p><strong>最小步数模型</strong>:对象里存路径(长度)，路径=旧路径+新边.终止时机：入队[第一次也要判定，路径比当前多1]，出队[慢]</p>
-<p><strong>判重方法</strong>:入队判重(入队前判定，入队后防止)，有dis(尽量防止往回走)和st(严格防止元素两次入队)两种方法.</p>
-<p><strong>停止方法</strong>:入队停止(找到答案就停止),出队停止(多等一会停止),遍历完停止</p>
-<p><strong>双端队列广搜</strong>:dijstra的优化版,dis小的元素从前入队，dis大的从后入队，队首=优先队列首</p>
-<p><strong>拓扑排序</strong>：特殊bfs，入度为0者入队,出队丢弃点和连边</p>
-<p><strong>floyd</strong>:点出入,dij表示ij间最短路,for kij用k松弛ij,O(V^3)</p>
-<p><strong>floyd求传递闭包</strong>：dij表示i可以到j，i-k,k-j导致i-j</p>
+<p><strong>次短路</strong>：dijstra， 次小值算法更新最次短路。dis[i,0]表示最短路长，1表示次短路长，优先队列多存类型，dis更新导致入队，只初始化最短路</p>
+<p><strong>最短路方案数</strong>:dijstra，类过河卒求前驱方案数之和。可以更新最短路时，方案数重置。找到最短路的其他方案时，方案数累加(次短路也是)</p>
+<p><strong>spfa</strong>:广搜走迷宫，但队无重员加速（inq表示节点在队内吗），栈代替队列加速</p>
+<p><strong>负环</strong>:绕一圈权和&lt;0的环，有向图要能顺着方向走通，使广搜走迷宫死循环。超级源点排除了起点的特殊性，0边保证图等价，总更新次数超过2倍点数一般有负环</p>
+<p><strong>负环存在</strong>:从超级源点广搜走迷宫，0边指向所有点，导致dis=0全入队.cnt表示节点处于第几次连续更新，全负边环cnt依次+1，全正边环cnt=0，cnt比n多则有负环</p>
+<p><strong>最长路</strong>:所有路径中最长的路径长，无向图正边就是正环(一般考虑有向图)，改进：初始化dis全负无穷，起点0.更新符号反过来,无等号防止重复加入。</p>
+<p><strong>类负环问题</strong>:将负环条件，0换disv-disu,边权总和换边权w，点权总和换u的点权，边数换1得遍历条件，换等号得更新公式。同样0边超级源点，正环只是变号</p>
+<p><strong>差分约束</strong>:差分不等式组，求最大值(最小值)解用最短路(最长路)。两项指向1项，由最短路性质知不等式，dis看作x，常量不等式用超级源点指向节点，当作起点spfa，负环(正环)等价于不等式矛盾</p>
+<p><strong>floyd</strong>:标准初始化得恰好0条边最短路，再读入边是1条边以内最短路，2条边以上要经过点，枚举点k求最短路必含答案，遍历ij求出全部，for kij解决依赖问题</p>
+<p><strong>floyd求传递闭包</strong>：dij表示i可以到j，原来两段距离和更新最短距离，现在两段都可达更新可达性</p>
 <p><strong>传递闭包</strong>：u指向v路径上所有节点指向v</p>
 <p><strong>floyd求最短路方案</strong>：松弛成功时ij最短路过k，递归求ij最短路方案</p>
 <p><strong>floyd性质</strong>: 第k轮循环开始时,dij表示从i到j只可以经过点1-(k-1)的最短路</p>
-<p><strong>bellman</strong>:多次枚举边松弛，一轮中新dis不可重用</p>
-<p><strong>性质</strong>：第k轮循环后dis i是经过k边之内最短路</p>
-<p><strong>spfa</strong>:<del>待小定</del>松,队无重元</p>
+<p><strong>恰好K边最短路</strong>:只读入边是恰好1条边最短路，恰好4条边最短路必可分为2边+中间点+2边，枚举点k求最短路必含答案，遍历ij求出全部，for kij解决依赖。矩阵快速幂知求解顺序</p>
+<p><strong>bellman ford</strong>:多轮遍历所有边进行松弛操作，每轮开始前存dis，替换disu+w，防止一条链全部更新完</p>
+<p><strong>K边之内最短路</strong>：第k轮循环后dis i是经过k边之内最短路</p>
 <p><strong>时间复杂度</strong>：E(不止V次)到VE</p>
-<p><strong>通用初始化</strong>：四单(dis)一多(d)都是无穷,都是起点0(多源自己是起点，也是0)</p>
-<p><strong>数据结构</strong>:邻接表:堆优化dijstra spfa(亲戚)用queue,邻接矩阵:普通dijstra floyd， 不存只记录bellman</p>
 <p><strong>并查集</strong>：对应树，节点i的父节点是fatheri，根父节点是自己</p>
-<p><strong>三种操作</strong>:并(用根合并树),查(递归find根节点,查询是否同根同树),集(集中初始化)</p>
+<p><strong>三种操作</strong>:并(合并树根),查(find查找树根),集(集中初始化)</p>
 <p><strong>路径压缩</strong>：父亲指向根，递归导致从上到下节点(带着旁路)指向根</p>
 <p><strong>并查集维护集合大小</strong>: 根节点i的size i表示集合大小(或者点权和)，其他size无意义，合并后新根增加</p>
 <p><strong>按秩合并</strong>：根节点i的rank i表示树的深度，短树根接在长树根上，同长树变长</p>
@@ -400,12 +427,35 @@ mjx-container[display="true"] + br {
 <p><strong>map版并查集</strong>：father是map，得先统计元素进行初始化指向自己</p>
 <p><strong>并查集维护距离</strong>：di表示节点i到父节点的某种距离(不是树上距离)，节点i指向根节点时距离也要变。</p>
 <p><strong>最小生成森林</strong>：多个连通图中选边保持连通，且边权和最小，每个连通图构成最小生成树(独立最值)</p>
-<p><strong>kruskal</strong>:边权排序，不连则连</p>
+<p><strong>kruskal</strong>:边权排序，不连则连(并查集放入同一集合)</p>
 <p><strong>性质</strong>：遍历到的前k条边中被选择的边构成前k条边的最小生成森林，导致遍历完也是(生成树是特例)</p>
 <p><strong>证明</strong>：k=1第一条最短边，满足。 假设k条满足，k+1所在生成树叫res，最小生成树是ans，k+1是实边，ans必含，虚边必不含，ans=res</p>
-<p><strong>其他性质</strong>：最小生成树，最小生成森林，已连边的最小连通图，大边最小树</p>
+<p><strong>同时是</strong>：最小生成树，最小生成森林，已连边的最小连通图，大边最小树</p>
+<p><strong>次小生成树</strong>: </p>
 <p><strong>trie树</strong>:节点26边，字母在边不在点，单词共用前缀</p>
-<p><strong>负环</strong>:边权和&lt;0的环</p>
+<p><strong>最近公共祖先</strong>:father[u,i]表示节点u头上2^i个节点编号，越界是超级源点，i=0变并查集定义.边权为1的树，超级源点1边连接根，广搜走迷宫求最短路，同时按依赖求father(连走两个2^i-1)</p>
+<p><strong>lca</strong>:二进制从大到小遍历不越界的跳跃。首先将深度深的节点抬平(跳后深度过浅就是越界)，然后如果在两个叉，同时抬高到lca下方(跳后同一节点就是越界)</p>
+<p><strong>树形深搜(有向)</strong>:起点搜索，遍历邻居搜索</p>
+<p><strong>树形深搜(无向)</strong>:节点父节点作为额外参数，起点没有父节点，只遍历不是父节点的邻居</p>
+<p><strong>深搜走迷宫</strong> :有向树形深搜，但用st判重，函数调用前或函数开头标记，可视化:贪吃蛇堆叠移动</p>
+<p><strong>DAG</strong>:(拓扑图,有向无环图)1.非终点一定可以走到终点[起点类似]【出度不为0可以一直走】。2.如果起点唯一,只有它可以达到所有点。否则，不存这样的点。[终点类似]。</p>
+<p><strong>scc</strong>:强连通分量,任意两点彼此可达。scc缩点得到拓扑图[环是scc], max(起点数,终点数)是把整个图变scc需连边数【1起点就从所有终点连接它，多起点就将终点1对1连起点减少到1起点】</p>
+<p><strong>tarjan求scc</strong>:深搜走迷宫，用深搜序号判重[函数开头标记]，low[i]表示节点i所在scc的最早点，用不确定scc的邻居更新. 遇到scc最早点(low没有被更新过的点)时弹栈到最早点，确定scc元素</p>
+<p><strong>tarjan的性质</strong>:dcc/scc顺着编号，之后逆序遍历是拓扑序。线性的，所有元素只tarjan一次，入栈一次[栈中存遍历到且不确定scc/dcc的元素]</p>
+<p><strong>缩点图重构</strong>:tarjan记录节点所在scc编号，遍历所有点的所有边，scc编号看作点编号，去掉自环[对两点哈希可去掉重边],构建G</p>
+<p><strong>弱联通</strong>:任意两点至少一方可达。最大弱联通子图等价于缩点后最长链，f[u]表示以节点u结尾的最大链长，按拓扑序可求</p>
+<p><strong>桥和割点</strong>：连通图去掉后不连通的边或点，彼此不能互推存在</p>
+<p><strong>edcc</strong>:无向图边的双连通分量，定义为没有桥的连通图，等价于任意两点可由无重边的两条路径连通。缩点后得到树，桥变成树边。</p>
+<p><strong>tarjan求edcc</strong>:建图时存边编号，一对有向边编号01,23,45…。tarjan多一个参数记录调用时父子边，禁止父子边更新子节点的low[否则全为1]，子节点去不到父节点及以上则父子边为桥</p>
+<p><strong>edcc的性质</strong>:将连通图变成双向连通需要连接dcc缩点后叶子节点数/2(上取整)条边zz</p>
+<p><strong>vdcc</strong>:无向图点的双连通分量，定义为没有割点的连通图。</p>
+<p><strong>low的意义</strong>:有向图所中，所在scc中的最早点(无向图cc中的最早点)。无向图中，禁止父子边更新子节点后表示edcc中最早点，禁止祖先边迭代更新子节点后表示vdcc中的最早点</p>
+<p><strong>tarjan求割点</strong>:限制性求low，如果子节点走不到父节点以上则弹栈到子节点+父节点构成vdcc，父节点不为根或连接多个vdcc时父节点为割点</p>
+<p><strong>二分图</strong>：定义为可二染色的图[二染色后任意一条边连接不同颜色节点]。二分图可以用匈牙利算法算出最大匹配(数)[即一对一尽量连边]</p>
+<p><strong>增广路径</strong>：从左未匹配点经邻居边走到右边，后经匹配边走回左边直到右未匹配点的路径，每个点只能走一次。连接两个未匹配点是最简单增广路径</p>
+<p><strong>增广路径的性质</strong>：总共奇数边，邻居边比匹配边多1，匹配边换邻居边使匹配总数+1，有向图g存邻居边，match[右节点]存匹配边，st对右节点判重[通过匹配边走到左节点自然不会重]</p>
+<p><strong>匈牙利算法</strong>：dfs(u)表示从节点u出发，深搜走迷宫。存在邻居未匹配，或经邻居找到增广路径则用邻居边修正匹配边，即找到增广路径。从所有左节点寻找增广路径(st独立故清空)</p>
+<p><strong>闫氏dp分析法</strong>:用集合属性表示状态，推导状态计算方法</p>
 <p><strong>背包问题</strong>：第i轮循环的fj表示从前i物品当中选入j体积背包的最大价值</p>
 <p><strong>01背包</strong>:i顺j逆，【不选物品i】fj是前i-1物品中选j体积，【选】fj-wi未更新，是前i-1物品中选</p>
 <p><strong>完全背包</strong>:i顺j顺，【不选物品i】fj是前i-1物品中选j体积，【选】fj-wi已更新，是前i物品中选，边界：塞满确定+塞超不选【同01】</p>
@@ -420,12 +470,10 @@ mjx-container[display="true"] + br {
 <p><strong>过河卒</strong>:路径集合的数量属性，而非最值属性，【分组计数】=前一个点计数求和</p>
 <p><strong>最长公共子序列</strong>:fij表示从A前i字符到B前j字符不相交单一连线的最值，【Ai与Bj不同】答案必不连，两种最大，【相同】有一个答案必连[否则要么等价or不对]，剩下的最大</p>
 <p><strong>DTW</strong>：dyna time wrap动态时间规整，不相交多连线，连满所有字符，代价=字符不相似度，如曼哈顿距离，总代价最小。</p>
-<p><strong>解法</strong>：两开头必连,双指针,算出fij表示Ai,Bj不相似度，从左上角到右下角(往右走=B指针移动连接)的最短路【类过河卒解法】</p>
-<p><strong>dfs</strong>:定义为：已知(已知表示不需要额外处理)….要…(参数限制范围).边界写法1:if else,2:if {return}</p>
-<p><strong>排列</strong>:dfs表示:已知填了pos之前的空格(st[j]表示数字j使用状态,rec[i]表示位置i填充状态)，要填充pos以及之后</p>
-<p><strong>方法</strong>:条件枚举位置pos的填法,利用填pos的中间状态附加递归操作，利用填完(填够指定格子)的中间状态附加输出操作</p>
+<p><strong>解法</strong>：两开头必连,双指针,算出Sij表示Ai,Bj不相似度，从左上角到右下角(往右走=B指针移动连接)的最短路【类过河卒解法】</p>
+<p><strong>dfs</strong>:定义为：已知(进行到某个中间状态)….要…(参数限制范围).边界写法1:if else,2:if {return}</p>
+<p><strong>排列</strong>:dfs表示:已知填了位置i之前的空格，要填i及之后的空格。填满了直接输出。否则遍历所有可填数字，构造填写状态[换数字时注意状态一致性].st表示数字是否用过，rec记录填写结果。</p>
 <p><strong>组合</strong>:保序去重，条件枚举pos填法时，总是比上一空更大.</p>
-<p><strong>撤步</strong>:为了枚举出正确的中间状态，撤掉状态的修改</p>
 <p><strong>sg函数</strong>：正整数集合最小的没有出现值。数组前i元素的sg函数，并查集所有可能值看作节点，从左遍历ai，与ai+1合并，根总是右边的，返回0的根节点</p>
 <p><strong>后缀数组sa</strong>:求banana的6个后缀，字典序，首字母下标得6元素数组</p>
 <p><strong>lcp</strong>:最长公共前缀，lcp[i]=sa[i-1],s[i]的最长公共前缀</p>
@@ -749,10 +797,9 @@ mjx-container[display="true"] + br {
 <p><strong>思维链</strong>:一步一步想(给出示例)</p>
 <p><strong>线性探测和微调</strong>：都是加载已训模型在新数据集训练，但线性探测冻住特征抽取器，训练线性层分类器</p>
 <p><strong>量化</strong>: 用量化字典(codebook，量少且低纬)每一个字[可学习的向量]的加权平均表示向量，权=相似度+温度softmax(硬量化是用最接近的单个向量)，量化前后相似度作为损失</p>
-<p> <strong>cv对比nlp</strong>:感知智能(需要直觉，特征好提取, 如边框)和认知智能(需要理解，特征不好提取，如歧义)</p>
-<p><strong>语音</strong>: 干扰更多，特征更难提取</p>
+<p> <strong>cv,nlp,语音</strong>:感知智能(需要直觉，特征好提取, 如边框)和认知智能(需要理解，特征不好提取，如歧义)，语音干扰更多，特征更难提取</p>
 <p><strong>ctc贪婪解码</strong>：每一个时间步都预测一个概率向量，贪婪解码取最大，相邻重复的去重，去掉blank得预测</p>
-<p><strong>语音分离</strong>：两个人说话数据集，声音混合(振幅相加)，预处理得特征图，u</p>
+<p><strong>语音分离</strong>：人声+背景声混合(振幅相加)，预处理得特征图，unet得新特征图，</p>
 <p><strong>矩阵上采样</strong>:每一个格子向右下角扩展2乘2格子，之后每个格子的值=相邻大格子的平均</p>
 <p><strong>跳跃连接</strong>:(skip con)相同宽高的图像，相加或者深度方向堆叠</p>
 <p><strong>unet</strong>：(U形)卷积(增加特征)+池化(减少大小)，矩阵上采样(增加大小)+跳跃连接+卷积(减少特征).</p>
@@ -774,7 +821,9 @@ mjx-container[display="true"] + br {
 <p><strong>diffusion</strong>:噪声分1000级，每级randn生成原图大小的不同噪声，新图=噪声+原图，噪声权重线性增加，原图权重sqrt(1-噪声权重)保证 图方差不变</p>
 <p><strong>训练</strong>：后一级噪声图作为输入(真实图，教师强制)，预测前一级噪声图或添加的噪声，预测和原图同形状，MSE损失，不同阶段权重不同</p>
 <p><strong>预测</strong>：自回归，从完全噪声预测少噪声，用预测作为输入继续预测，得到符合数据集分布的图像</p>
-<h4 id="论文和方向"><a href="#论文和方向" class="headerlink" title="论文和方向"></a>论文和方向</h4><p>上下文学习:基于prompt的示例回答</p>
+<p><strong>ARG</strong>:检索增强生成，问题-检索出文档和问题拼接，进行预测或者训练</p>
+<p><strong>对比学习检索</strong>:同clip，但是问题-文档对</p>
+<h4 id=""><a href="#" class="headerlink" title=""></a></h4><p>上下文学习:基于prompt的示例回答</p>
 <p>指令遵循</p>
 <p>逐步推理</p>
 <p>idea: llm回答a=[1,2,3]，之后计算a*b,把a替换的时候[1,2,3]能否作为一个token而不是多个</p>
@@ -787,11 +836,143 @@ mjx-container[display="true"] + br {
 <p>多思考之后再预测下一个词，之后损失</p>
 <p>可以识别图片中的代码，但是无法识别图中代码文字的颜色</p>
 <p>2024/6/15 顿悟，通过归纳和修正</p>
+<p>华为共计14400元实习工资</p>
+<p><strong>9月</strong></p>
+<table>
+<thead>
+<tr>
+<th>Mon</th>
+<th>Tue</th>
+<th>Wed</th>
+<th>Thu</th>
+<th>Fri</th>
+<th>Sat</th>
+<th>Sun</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>a1,50*</td>
+<td>a1,10</td>
+<td>a1,10*</td>
+</tr>
+<tr>
+<td>a1,10</td>
+<td>10*</td>
+<td>a1,10</td>
+<td>a1,10</td>
+<td>a2,10*</td>
+<td>a0,10</td>
+<td>a2,10</td>
+</tr>
+<tr>
+<td>a1,10</td>
+<td>a1,50*</td>
+<td>a0,10</td>
+<td>a1,10</td>
+<td>a1,10</td>
+<td>a1,10*</td>
+<td>a1,10</td>
+</tr>
+<tr>
+<td>a0,1</td>
+<td>a2,11*</td>
+<td>a1,50*</td>
+<td>a1,1</td>
+<td>a0,1</td>
+<td>a2,1*</td>
+<td>a0,50</td>
+</tr>
+<tr>
+<td>a0,50</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p><strong>10月</strong></p>
+<table>
+<thead>
+<tr>
+<th>Mon</th>
+<th>Tue</th>
+<th>Wed</th>
+<th>Thu</th>
+<th>Fri</th>
+<th>Sat</th>
+<th>Sun</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td>a1,</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/06/24/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" data-id="clzxt2m2t00018wvy1si7bpnu" data-title="读书笔记" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/06/24/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" data-id="cm1q5nmxg0001eovycg6l531b" data-title="读书笔记" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
